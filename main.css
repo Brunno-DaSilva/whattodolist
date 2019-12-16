@@ -3,13 +3,24 @@
 
 /* add color variables */
 :root {
-  --candy-pink: #e7717d;
-  --grey-ice-blue: #59646f;
+  
   --total-black: #0b0c10;
-  --aqua-strike: #66fcf1;
   --calm-teal: #45a29e;
+  --yellow-light: #fbe8b3;
+  --sea-serpent: #ebe3e3;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
+  height: 100vh;
+  min-height: 120vh;
+  width: 100vw;
+}
 /* center the container and imply margins */
 #container {
   width: 90%;
@@ -28,7 +39,7 @@
   padding: 5px;
   height: 50px;
   font-size: 2rem;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   color: #333;
   list-style: none;
   border-radius: 10px;
@@ -42,16 +53,13 @@
 }
 
 /* General style and a little bit responsive text  */
-body {
-  text-align: center;
-  font-family: "Shadows Into Light", cursive;
-}
+
 
 #remove {
   display: inline-block;
 }
 .title {
-  margin-top: 50px;
+  margin: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -156,14 +164,35 @@ button:hover {
 .done-item {
   background: var(--candy-pink);
 }
+
+/*/////////////////////////////
+//        Footer                     
+/////////////////////////////*/
 svg {
   margin-bottom: -35px;
 }
 footer {
-  height: 20vh;
-  color: white;
-  font-size: 1.5rem;
+  width: 100vw;
+  height: auto;
+  padding: 50px;
+  color: var(--sea-serpent);
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-top: auto;
   background-color: var(--total-black);
+  z-index: 6;
+
+}
+footer img {
+  width: 90px;
+  height: auto;
+}
+footer span {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 20px;
+  font-size: 1.5rem;
+  color: var(--yellow-light);
 }
 /* New item animation */
 @keyframes zoom-in {
