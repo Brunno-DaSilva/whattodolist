@@ -1,13 +1,21 @@
 /* Import some fonts */
 @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap");
 
 /* add color variables */
 :root {
-  
   --total-black: #0b0c10;
   --calm-teal: #45a29e;
   --yellow-light: #fbe8b3;
-  --sea-serpent: #ebe3e3;
+  --sea-serpent: #282828;
+  --dark-font-color-title: #173f5f;
+  --nave-light-blue: #20639b;
+  --teal-green: #3caea3;
+  --farting-yellow: #f6d55c;
+  --laranja-orange: #ed553b;
+  --light-font-color: #e5f2fc;
+  --light-font-color-title: #c9dded;
+  --gray-neutral-color: #63717d;
 }
 
 * {
@@ -21,6 +29,47 @@ body {
   min-height: 120vh;
   width: 100vw;
 }
+
+/*HEADER Navigation Bar*/
+header {
+  width: 100%;
+}
+.navbar {
+  height: 50px;
+  background-color: var(--sea-serpent);
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--total-black);
+}
+
+.navbar img {
+  width: 25px;
+  height: auto;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--yellow-light);
+  letter-spacing: 1px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Muli", sans-serif;
+}
+.navbar a:hover {
+  color: var(--farting-yellow);
+}
+
+.navbar-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*END- Header*/
 /* center the container and imply margins */
 #container {
   width: 90%;
@@ -53,7 +102,6 @@ body {
 }
 
 /* General style and a little bit responsive text  */
-
 
 #remove {
   display: inline-block;
@@ -134,7 +182,7 @@ button:hover {
   margin: 1em;
 }
 #to-do-list h2,
-#completed h2{
+#completed h2 {
   margin: 20px;
 }
 .holdCompletedTasks,
@@ -170,36 +218,57 @@ button:hover {
 .done-item {
   background: var(--candy-pink);
 }
-
-/*/////////////////////////////
-//        Footer                     
-/////////////////////////////*/
+/*******************************
+*     Footer and SVG
+*******************************/
 svg {
   margin-bottom: -35px;
+  z-index: 5;
 }
 footer {
-  width: 100vw;
-  height: auto;
-  padding: 50px;
-  color: var(--sea-serpent);
-  font-size: 1.3rem;
-  letter-spacing: 4px;
+  font-family: "Shadows Into Light Two", cursive;
+  min-height: 30vh;
+  color: white;
+  font-size: 1.5rem;
   text-align: center;
   margin-top: auto;
   background-color: var(--total-black);
   z-index: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
 
+footer span {
+  color: var(--farting-yellow);
 }
 footer img {
   width: 90px;
   height: auto;
 }
-footer span {
-  font-family: "Montserrat", sans-serif;
-  margin-left: 20px;
-  font-size: 1.5rem;
-  color: var(--yellow-light);
+
+footer .info-Bruno {
+  width: 70%;
+  padding: 20px;
+  text-align: center;
 }
+
+.info-Bruno p {
+  color: var(--light-font-color-title);
+  font-size: 1.8rem;
+}
+
+.info-Bruno a {
+  color: var(--light-font-color-title);
+  padding: 10px;
+}
+
+.info-Bruno a:hover {
+  color: var(--farting-yellow);
+}
+
 /* New item animation */
 @keyframes zoom-in {
   0% {
