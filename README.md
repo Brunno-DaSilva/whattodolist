@@ -8,4 +8,4 @@ JavaScrip
 JQuery
 JQueryUI
 
-App Demo: https://dasilvabrunotexas.github.io/whattodolist/
+App Demo: https://Brunno-DaSilva.github.io/whattodolist/
